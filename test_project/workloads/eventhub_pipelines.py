@@ -1,6 +1,6 @@
 # Rename columns
 MAPPING = {"ts": "eventhub_timestamp", "cst": "customer_id", "cid": "contact_id", "mid": "maersk_id"}
-
+# dummy comment
 
 def parse_eventhub_timestamp(data: pyspark.sql.DataFrame) -> pyspark.sql.DataFrame:
     eventhub_timestamp = data.withColumn("eventhub_timestamp",
